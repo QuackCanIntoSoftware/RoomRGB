@@ -48,6 +48,18 @@
     <Filter Include="Source files\Device-specific files\SystemInit">
       <UniqueIdentifier>{114c0d12-2205-4425-b992-a37c46688121}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source files\Src\ws2812">
+      <UniqueIdentifier>{8f72aa4a-8830-4ea9-9aee-6a3ef53326ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Inc\ws2812">
+      <UniqueIdentifier>{979e23c6-5353-4796-9ab6-e961e2a09245}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Inc\status">
+      <UniqueIdentifier>{906d412f-9e1d-4fa1-89fb-417918000c0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Src\status">
+      <UniqueIdentifier>{c9e0ca5d-62c8-44b1-ab79-e5575b2c55c2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Inc\mxconstants.h">
@@ -395,14 +407,17 @@
     <ClInclude Include="e:\Users\sebaq\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx\CMSIS_HAL\RTOS\Template\cmsis_os.h">
       <Filter>Header files\Device-specific files\HAL</Filter>
     </ClInclude>
-    <ClInclude Include="statusControl\statusLED.h">
-      <Filter>Header files\Inc</Filter>
-    </ClInclude>
     <ClInclude Include="Constants.h">
       <Filter>Header files\Inc</Filter>
     </ClInclude>
-    <ClInclude Include="statusControl\statusManager.h">
-      <Filter>Header files\Inc</Filter>
+    <ClInclude Include="..\Inc\status\statusLED.h">
+      <Filter>Header files\Inc\status</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\status\statusManager.h">
+      <Filter>Header files\Inc\status</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\ws2812\ws2812manager.h">
+      <Filter>Header files\Inc\ws2812</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -676,11 +691,14 @@
     <ClCompile Include="e:\Users\sebaq\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx\CMSIS_HAL\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c">
       <Filter>Source files\Device-specific files\SystemInit</Filter>
     </ClCompile>
-    <ClCompile Include="statusControl\statusLED.c">
-      <Filter>Header files\Inc</Filter>
+    <ClCompile Include="..\Src\status\statusLED.c">
+      <Filter>Source files\Src\status</Filter>
     </ClCompile>
-    <ClCompile Include="statusControl\statusManager.c">
-      <Filter>Source files</Filter>
+    <ClCompile Include="..\Src\status\statusManager.c">
+      <Filter>Source files\Src\status</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\ws2812\ws2812manager.c">
+      <Filter>Source files\Src\ws2812</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

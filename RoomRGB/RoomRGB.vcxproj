@@ -64,8 +64,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="..\Inc\mxconstants.h" />
+    <ClInclude Include="..\Inc\status\statusLED.h" />
+    <ClInclude Include="..\Inc\status\statusManager.h" />
     <ClInclude Include="..\Inc\stm32f4xx_hal_conf.h" />
     <ClInclude Include="..\Inc\stm32f4xx_it.h" />
+    <ClInclude Include="..\Inc\ws2812\ws2812manager.h" />
     <ClInclude Include="Constants.h" />
     <ClInclude Include="e:\Users\sebaq\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx\CMSIS_HAL\Device\ST\STM32F4xx\Include\stm32f4xx.h" />
     <ClInclude Include="e:\Users\sebaq\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx\CMSIS_HAL\Device\ST\STM32F4xx\Include\system_stm32f4xx.h" />
@@ -179,13 +182,14 @@
     <ClInclude Include="e:\Users\sebaq\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_usb.h" />
     <ClInclude Include="e:\Users\sebaq\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_utils.h" />
     <ClInclude Include="e:\Users\sebaq\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_wwdg.h" />
-    <ClInclude Include="statusControl\statusManager.h" />
-    <ClInclude Include="statusControl\statusLED.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Src\main.c" />
+    <ClCompile Include="..\Src\status\statusLED.c" />
+    <ClCompile Include="..\Src\status\statusManager.c" />
     <ClCompile Include="..\Src\stm32f4xx_hal_msp.c" />
     <ClCompile Include="..\Src\stm32f4xx_it.c" />
+    <ClCompile Include="..\Src\ws2812\ws2812manager.c" />
     <ClCompile Include="e:\Users\sebaq\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx\CMSIS_HAL\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c" />
     <ClCompile Include="e:\Users\sebaq\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx\StartupFiles\startup_stm32f407xx.c" />
     <ClCompile Include="e:\Users\sebaq\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c" />
@@ -273,8 +277,6 @@
     <ClCompile Include="e:\Users\sebaq\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_usart.c" />
     <ClCompile Include="e:\Users\sebaq\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_usb.c" />
     <ClCompile Include="e:\Users\sebaq\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_utils.c" />
-    <ClCompile Include="statusControl\statusManager.c" />
-    <ClCompile Include="statusControl\statusLED.c" />
   </ItemGroup>
   <ItemGroup>
     <None Include="debug.mak" />
