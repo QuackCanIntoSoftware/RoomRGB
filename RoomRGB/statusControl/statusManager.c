@@ -4,7 +4,7 @@
   * @brief   Contolling of the devices'status
   ******************************************************************************
   */
-#include "statusControl.h"
+#include "statusManager.h"
 
 
 void SC_Init()

@@ -34,7 +34,7 @@
 #include "stm32f4xx_hal.h"
 
 /* USER CODE BEGIN Includes */
-#include "statusControl/statusControl.h"
+#include "statusControl/statusManager.h"
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/

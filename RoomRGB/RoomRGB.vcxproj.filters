@@ -395,13 +395,13 @@
     <ClInclude Include="e:\Users\sebaq\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx\CMSIS_HAL\RTOS\Template\cmsis_os.h">
       <Filter>Header files\Device-specific files\HAL</Filter>
     </ClInclude>
-    <ClInclude Include="statusControl\statusControl.h">
-      <Filter>Header files\Inc</Filter>
-    </ClInclude>
     <ClInclude Include="statusControl\statusLED.h">
       <Filter>Header files\Inc</Filter>
     </ClInclude>
     <ClInclude Include="Constants.h">
+      <Filter>Header files\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="statusControl\statusManager.h">
       <Filter>Header files\Inc</Filter>
     </ClInclude>
   </ItemGroup>
@@ -676,11 +676,11 @@
     <ClCompile Include="e:\Users\sebaq\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx\CMSIS_HAL\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c">
       <Filter>Source files\Device-specific files\SystemInit</Filter>
     </ClCompile>
-    <ClCompile Include="statusControl\statusControl.c">
-      <Filter>Source files</Filter>
-    </ClCompile>
     <ClCompile Include="statusControl\statusLED.c">
       <Filter>Header files\Inc</Filter>
+    </ClCompile>
+    <ClCompile Include="statusControl\statusManager.c">
+      <Filter>Source files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
