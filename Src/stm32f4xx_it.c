@@ -37,6 +37,8 @@
 
 /* USER CODE BEGIN 0 */
 
+#include "statusControl/statusControl.h"
+
 /* USER CODE END 0 */
 
 /* External variables --------------------------------------------------------*/
@@ -53,6 +55,7 @@ extern TIM_HandleTypeDef htim2;
 void SysTick_Handler(void)
 {
   /* USER CODE BEGIN SysTick_IRQn 0 */
+	SC_Run();
 
   /* USER CODE END SysTick_IRQn 0 */
   HAL_IncTick();
