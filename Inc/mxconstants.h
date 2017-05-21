@@ -101,7 +101,10 @@
 #define MEMS_INT2_Pin GPIO_PIN_1
 #define MEMS_INT2_GPIO_Port GPIOE
 /* USER CODE BEGIN Private defines */
-
+#define E_TYPE uint8_t
+#define E_OK 0
+#define E_WARNING 1
+#define E_ERROR 2
 /* USER CODE END Private defines */
 
 /**

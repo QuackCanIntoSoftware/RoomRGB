@@ -407,9 +407,6 @@
     <ClInclude Include="e:\Users\sebaq\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx\CMSIS_HAL\RTOS\Template\cmsis_os.h">
       <Filter>Header files\Device-specific files\HAL</Filter>
     </ClInclude>
-    <ClInclude Include="Constants.h">
-      <Filter>Header files\Inc</Filter>
-    </ClInclude>
     <ClInclude Include="..\Inc\status\statusLED.h">
       <Filter>Header files\Inc\status</Filter>
     </ClInclude>
@@ -417,6 +414,9 @@
       <Filter>Header files\Inc\status</Filter>
     </ClInclude>
     <ClInclude Include="..\Inc\ws2812\ws2812manager.h">
+      <Filter>Header files\Inc\ws2812</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\ws2812\ws2812driver.h">
       <Filter>Header files\Inc\ws2812</Filter>
     </ClInclude>
   </ItemGroup>
@@ -698,6 +698,9 @@
       <Filter>Source files\Src\status</Filter>
     </ClCompile>
     <ClCompile Include="..\Src\ws2812\ws2812manager.c">
+      <Filter>Source files\Src\ws2812</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\ws2812\ws2812driver.c">
       <Filter>Source files\Src\ws2812</Filter>
     </ClCompile>
   </ItemGroup>

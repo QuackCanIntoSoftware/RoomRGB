@@ -41,11 +41,16 @@
 
 /* Includes ------------------------------------------------------------------*/
 /* Exported types ------------------------------------------------------------*/
+struct timers_t
+{
+	uint16_t sysTicTimer;
+	uint16_t SMTimer;
+};
 /* Exported constants --------------------------------------------------------*/
 /* Exported macro ------------------------------------------------------------*/
 /* Exported functions ------------------------------------------------------- */
 
-void SysTick_Handler(void);
+	 void SysTick_Handler(void);
 void TIM2_IRQHandler(void);
 void DMA2_Stream1_IRQHandler(void);
 

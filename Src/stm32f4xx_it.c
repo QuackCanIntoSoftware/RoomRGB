@@ -55,13 +55,15 @@ extern TIM_HandleTypeDef htim2;
 void SysTick_Handler(void)
 {
   /* USER CODE BEGIN SysTick_IRQn 0 */
-	SC_Run();
+	static struct timers_t timers;
+	
+	if (timers.sysTicTimer == timers.SMTimer) timers.SMTimer = SC_Run(timers.sysTicTimer);
 
   /* USER CODE END SysTick_IRQn 0 */
   HAL_IncTick();
   HAL_SYSTICK_IRQHandler();
   /* USER CODE BEGIN SysTick_IRQn 1 */
-
+	timers.sysTicTimer++;
   /* USER CODE END SysTick_IRQn 1 */
 }
 
